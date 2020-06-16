@@ -1,19 +1,33 @@
-// Criar um programa que calcule a média das notas entre alunos e envia a mensagem da média
+// Criar um programa que calcule a média das turmas de alunos e envia a mensagem da média
 
-const aluno1 = 'Maxwel'
-const notaAluno1 = 9.0
+const alunosManha = [
+  { nome: 'Guilhereme', sobrenome: 'Pereira', nota: 6.6 },
+  { nome: 'Marcelo', sobrenome: 'Silva', nota: 2.8 },
+  { nome: 'Mauricio', sobrenome: 'Santos', nota: 3.3 }
+]
 
-const aluno2 = 'Raimundo'
-const notaAluno2 = 1.2
+const alunosNoite = [
+  { nome: 'Anderson', sobrenome: 'Pereira', nota: 1.6 },
+  { nome: 'Thiago', sobrenome: 'Silva', nota: 9.8 },
+  { nome: 'Amanda', sobrenome: 'Ramos', nota: 9.3 }
+]
 
-const aluno3 = 'Rafael'
-const notaAluno3 = 3.1
-
-const media = (notaAluno1 + notaAluno2 + notaAluno3) / 3
-
-if (media >= 5) {
-  console.log(`Sua nota foi ${media}. Parabéns`)
-
-} else {
-  console.log(`Sua nota foi ${media}. Estude mais`)
+function calcularMedia(alunos) {
+  return (alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
 }
+
+const mediaManha = calcularMedia(alunosManha)
+const mediaNoite = calcularMedia(alunosNoite)
+
+function enviarMensagem(media, turma) {
+
+  if (media >= 5) {
+    console.log(`A média da ${turma} foi ${media}. Parabéns a todos`)
+
+  } else {
+    console.log(`A média da ${turma} foi ${media}. Vocês precisam estudar mais`)
+  }
+}
+
+enviarMensagem(mediaManha, 'turma da manhã')
+enviarMensagem(mediaNoite, 'turma da noite')
