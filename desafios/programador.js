@@ -18,8 +18,7 @@ const funcionario = {
   {
     nome: 'Python',
     especialidade: 'Data Science'
-  }
-  ]
+  }]
 }
 
 // Imprima em tela o nome e a especialidade da tecnologia que o programador utiliza 

@@ -11,8 +11,7 @@ const funcionarios = [{
 {
   nome: 'Marcos',
   habilidades: ['Node.js', 'React Native', 'React']
-}
-]
+}]
 
 function listarFuncionarios() {
   for (let funcionario of funcionarios) {

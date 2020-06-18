@@ -11,8 +11,7 @@ const pessoa = [{
   idade: 48,
   sexo: 'F',
   contribuicao: 23
-}
-]
+}]
 
 function calcularContribuicao(receber) {
   return calculo = receber.idade + receber.contribuicao

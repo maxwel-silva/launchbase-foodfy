@@ -19,8 +19,7 @@ const clientes = [{
   nome: 'Vanessa Lima',
   receitas: [800, 300, 560],
   despesas: [1000, 2300]
-}
-]
+}]
 
 for (let i = 0; i < clientes.length; i++) {
   const receitas = clientes[i].receitas.reduce((A, B) => {

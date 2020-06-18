@@ -4,8 +4,7 @@ const pessoas = [{
   nome: 'Carlos Nascimento',
   peso: 72,
   altura: 1.88
-}
-]
+}]
 
 function calcularPeso(pessoa) {
   return (pessoa.peso / (pessoa.altura * pessoa.altura))

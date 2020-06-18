@@ -1,42 +1,40 @@
 const turmaA = [{
-    nome: 'Marcelo',
-    nota: 10
-  },
-  {
-    nome: 'Vanessa',
-    nota: 10
-  },
-  {
-    nome: 'Gustavo',
-    nota: 5.5
-  },
-  {
-    nome: 'Arlindo',
-    nota: 2
-  }
-]
+  nome: 'Marcelo',
+  nota: 10
+},
+{
+  nome: 'Vanessa',
+  nota: 10
+},
+{
+  nome: 'Gustavo',
+  nota: 5.5
+},
+{
+  nome: 'Arlindo',
+  nota: 2
+}]
 
 const turmaB = [{
-    nome: 'Thiago',
-    nota: 1
-  },
-  {
-    nome: 'Juliana',
-    nota: 10
-  },
-  {
-    nome: 'Maria',
-    nota: 2
-  },
-  {
-    nome: 'Paulo',
-    nota: 2
-  },
-  {
-    nome: 'Novo Aluno(a)',
-    nota: 10
-  }
-]
+  nome: 'Thiago',
+  nota: 1
+},
+{
+  nome: 'Juliana',
+  nota: 10
+},
+{
+  nome: 'Maria',
+  nota: 2
+},
+{
+  nome: 'Paulo',
+  nota: 2
+},
+{
+  nome: 'Novo Aluno(a)',
+  nota: 10
+}]
 
 function calcularNotas(alunos) {
 
