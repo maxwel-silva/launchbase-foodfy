@@ -34,14 +34,14 @@ function listarFuncionarios() {
   }
 }
 
-function verificarHabilidade(listar) {
-  for (let habilidade of listar.habilidades) {
-    if (habilidade == 'CSS') return true
+function verificarHabilidade(funcionarios) {
+  if (funcionarios.habilidades.includes('CSS')) {
+    return true;
   }
-  return false
+  return false;
 }
 
-// Percorra o array de funcionários e, para cada um, verifique se o mesmo tem habilidade com CSS utilizando a função construída acima
+// Percorra o array de funcionários e verifique se o mesmo tem habilidade com CSS utilizando a função construída
 
 for (let i = 0; i < funcionarios.length; i++) {
   const tecnologia = verificarHabilidade(funcionarios[i])

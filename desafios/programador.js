@@ -22,6 +22,6 @@ const funcionario = {
   ]
 }
 
-// Imprima em tela o nome e a especialidade da tecnologia que o usuário utiliza 
+// Imprima em tela o nome e a especialidade da tecnologia que o programador utiliza 
 
 console.log(`Funcionário(a) ${funcionario.nome} tem ${funcionario.idade} anos e usa a tecnologia ${funcionario.tecnologias[1].nome} com especialidade em ${funcionario.tecnologias[1].especialidade}`)
