@@ -3,7 +3,7 @@
 const pessoas = [
   {
     nome: 'Carlos Nascimento',
-    peso: 40,
+    peso: 72,
     altura: 1.88
   }
 ]
