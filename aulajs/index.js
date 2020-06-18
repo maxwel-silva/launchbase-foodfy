@@ -24,7 +24,7 @@ const turmaB = [
   },
   {
     nome: 'Juliana',
-    nota: 1.2
+    nota: 10
   },
   {
     nome: 'Maria',
@@ -35,7 +35,7 @@ const turmaB = [
     nota: 2
   },
   {
-    nome: 'Novo Aluno',
+    nome: 'Novo Aluno(a)',
     nota: 10
   }
 ]
@@ -56,15 +56,40 @@ const mediaA = calcularNotas(turmaA)
 const mediaB = calcularNotas(turmaB)
 
 function enviarMensagem(turma, media) {
-  if (media > 5) {
-    console.log(`\n Turma: ${turma}\n Média: ${media}\n Mensagem: Aprovados`)
+  if (media > 6) {
+    console.log(`\n Turma: ${turma}\n Média: ${media}\n Mensagem: Aprovados\n`)
 
   } else {
-    console.log(`\n Turma: ${turma}\n Média: ${media}\n Mensagem: Reprovados`)
+    console.log(`\n Turma: ${turma}\n Média: ${media}\n Mensagem: Reprovados\n`)
   }
 }
 
-enviarMensagem('A', mediaA.toFixed(3))
 enviarMensagem('B', mediaB.toFixed(3))
 
+// Marcar cada aluno como aprovado ou reprovado se a nota for muito baixa
 
+function marcarReprovados(aluno) {
+  aluno.reprovado = false
+
+  if (aluno.nota < 5) {
+    aluno.reprovado = true
+  }
+}
+
+function enviarMensagemReprovado(aluno) {
+  if (aluno.reprovado) {
+    console.log(`Nome: ${aluno.nome}\nMensagem: Reprovado\n`)
+
+  } else {
+    console.log(`Nome: ${aluno.nome}\nMensagem: Aprovado(a)\n`)
+  }
+}
+
+function alunoReprovado(alunos) {
+  for (const aluno of alunos) {
+    marcarReprovados(aluno)
+    enviarMensagemReprovado(aluno)
+  }
+}
+
+alunoReprovado(turmaB)

@@ -28,10 +28,10 @@ function mensagemAposentadoria(nome, idade, sexo, contribuicao, calculo) {
   const aposentadoriaMulher = (sexo == 'F' && contribuicao >= 30 && calculo >= 85)
 
   if (aposentadoriaHomem || aposentadoriaMulher) {
-    console.log(`\n Nome: ${nome}\nIdade: ${idade}\nSexo: ${sexo}\nMensagem: Você pode se aposentar`)
-
+    console.log(`\n Nome: ${nome}\nIdade: ${idade}\nSexo: ${sexo}\nMensagem: Você pode se aposentar!`)
+    
   } else {
-    console.log(`\nNome: ${nome}\nIdade: ${idade}\nSexo: ${sexo}\nMensagem: Você não pode se aposentar`)
+    console.log(`\nNome: ${nome}\nIdade: ${idade}\nSexo: ${sexo}\nMensagem: Você não pode se aposentar!`)
   }
 }
 
