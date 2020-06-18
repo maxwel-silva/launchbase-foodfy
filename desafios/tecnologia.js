@@ -2,29 +2,15 @@
 
 const funcionarios = [
   {
-    nome: 'Carlos',
-    habilidades: [
-      'HTML',
-      'CSS',
-      'JavaScript'
-    ]
+    nome: 'Carlos', habilidades: ['HTML', 'CSS', 'JavaScript']
   },
 
   {
-    nome: 'Maxwel',
-    habilidades: [
-      'Java',
-      'C++'
-    ]
+    nome: 'Maxwel', habilidades: ['Java', 'C++']
   },
 
   {
-    nome: 'Marcos',
-    habilidades: [
-      'Node.js',
-      'React Native',
-      'React'
-    ]
+    nome: 'Marcos', habilidades: ['Node.js', 'React Native', 'React']
   }
 ]
 
