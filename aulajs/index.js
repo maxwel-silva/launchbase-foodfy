@@ -1,5 +1,4 @@
-const turmaA = [
-  {
+const turmaA = [{
     nome: 'Marcelo',
     nota: 10
   },
@@ -17,8 +16,7 @@ const turmaA = [
   }
 ]
 
-const turmaB = [
-  {
+const turmaB = [{
     nome: 'Thiago',
     nota: 1
   },

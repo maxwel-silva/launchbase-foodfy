@@ -7,18 +7,18 @@ const funcionario = {
   idade: 36,
   sexo: 'F',
 
-  tecnologias: [
-    {
-      nome: 'C++', especialidade: 'Desktop'
-    },
-
-    {
-      nome: 'JavaScript', especialidade: 'Mobile',
-    },
-
-    {
-      nome: 'Python', especialidade: 'Data Science'
-    }
+  tecnologias: [{
+    nome: 'C++',
+    especialidade: 'Desktop'
+  },
+  {
+    nome: 'JavaScript',
+    especialidade: 'Mobile',
+  },
+  {
+    nome: 'Python',
+    especialidade: 'Data Science'
+  }
   ]
 }
 

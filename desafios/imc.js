@@ -1,11 +1,10 @@
 // Crie um programa para calcular o IMC e nível de obesidade de uma pessoa
 
-const pessoas = [
-  {
-    nome: 'Carlos Nascimento',
-    peso: 72,
-    altura: 1.88
-  }
+const pessoas = [{
+  nome: 'Carlos Nascimento',
+  peso: 72,
+  altura: 1.88
+}
 ]
 
 function calcularPeso(pessoa) {

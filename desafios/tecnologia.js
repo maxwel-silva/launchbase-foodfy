@@ -1,17 +1,17 @@
 // Crie um programa que armazena um array de funcionários (objetos), cada funcionário tem um nome e suas habilidades em tecnologia
 
-const funcionarios = [
-  {
-    nome: 'Carlos', habilidades: ['HTML', 'CSS', 'JavaScript']
-  },
-
-  {
-    nome: 'Maxwel', habilidades: ['Java', 'C++']
-  },
-
-  {
-    nome: 'Marcos', habilidades: ['Node.js', 'React Native', 'React']
-  }
+const funcionarios = [{
+  nome: 'Carlos',
+  habilidades: ['HTML', 'CSS', 'JavaScript']
+},
+{
+  nome: 'Maxwel',
+  habilidades: ['Java', 'C++']
+},
+{
+  nome: 'Marcos',
+  habilidades: ['Node.js', 'React Native', 'React']
+}
 ]
 
 function listarFuncionarios() {
