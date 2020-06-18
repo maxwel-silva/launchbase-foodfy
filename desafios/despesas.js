@@ -39,8 +39,8 @@ for (let usuario of usuarios) {
   const saldo = calculaSaldo(usuario.receitas, usuario.despesas)
 
   if (saldo > 0) {
-    console.log(`Nome: ${usuario.nome}\nSaldo ${saldo.toFixed(2)}\n`)
+    console.log(`Nome: ${usuario.nome}\nSaldo: ${saldo.toFixed(2)}\n`)
   } else {
-    console.log(`Nome: ${usuario.nome}\nSaldo ${saldo.toFixed(2)}\n`)
+    console.log(`Nome: ${usuario.nome}\nSaldo: ${saldo.toFixed(2)}\n`)
   }
 }
