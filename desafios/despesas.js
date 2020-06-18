@@ -18,6 +18,15 @@ const usuarios = [
   }
 ]
 
+function somaNumeros(numeros) {
+  let soma = 0
+
+  for (let numero of numeros) {
+    soma = soma + numero
+  }
+  return soma
+}
+
 function calculaSaldo(receitas, despesas) {
   const somaReceitas = somaNumeros(receitas)
   const somaDespesas = somaNumeros(despesas)
@@ -25,21 +34,12 @@ function calculaSaldo(receitas, despesas) {
   return somaReceitas - somaDespesas
 }
 
-function somaNumeros(numeros) {
-  let soma = 0
-
-  for (let numero of numeros) {
-    soma = soma + numero
-  }
-
-  return soma
-}
-
 for (let usuario of usuarios) {
   const saldo = calculaSaldo(usuario.receitas, usuario.despesas)
 
   if (saldo > 0) {
     console.log(`Nome: ${usuario.nome}\nSaldo: ${saldo.toFixed(2)}\n`)
+
   } else {
     console.log(`Nome: ${usuario.nome}\nSaldo: ${saldo.toFixed(2)}\n`)
   }
