@@ -55,18 +55,14 @@ function calcularNotas(alunos) {
 const mediaA = calcularNotas(turmaA)
 const mediaB = calcularNotas(turmaB)
 
-function enviarMensagem(turma, media) {
+function enviarMensagemNotaTurmas(turma, media) {
   if (media > 6) {
-    console.log(`\n Turma: ${turma}\n Média: ${media}\n Mensagem: Aprovados\n`)
+    console.log(`\nTurma: ${turma}\nMédia: ${media}\nMensagem: Aprovados\n`)
 
   } else {
-    console.log(`\n Turma: ${turma}\n Média: ${media}\n Mensagem: Reprovados\n`)
+    console.log(`\nTurma: ${turma}\nMédia: ${media}\nMensagem: Reprovados\n`)
   }
 }
-
-enviarMensagem('B', mediaB.toFixed(3))
-
-// Marcar cada aluno como aprovado ou reprovado se a nota for muito baixa
 
 function marcarReprovados(aluno) {
   aluno.reprovado = false
@@ -78,18 +74,19 @@ function marcarReprovados(aluno) {
 
 function enviarMensagemReprovado(aluno) {
   if (aluno.reprovado) {
-    console.log(`Nome: ${aluno.nome}\nMensagem: Reprovado\n`)
+    console.log(`Nome: ${aluno.nome}\nMensagem: Reprovado(a)\n`)
 
   } else {
     console.log(`Nome: ${aluno.nome}\nMensagem: Aprovado(a)\n`)
   }
 }
 
-function alunoReprovado(alunos) {
+function alunosReprovados(alunos) {
   for (const aluno of alunos) {
     marcarReprovados(aluno)
     enviarMensagemReprovado(aluno)
   }
 }
 
-alunoReprovado(turmaB)
+enviarMensagemNotaTurmas('B', mediaB.toFixed(3))
+alunosReprovados(turmaB)
