@@ -26,8 +26,6 @@ function verificarHabilidade(funcionarios) {
   return false;
 }
 
-// Percorra o array de funcionários e verifique se o mesmo tem habilidade com CSS utilizando a função construída
-
 for (let i = 0; i < funcionarios.length; i++) {
   const tecnologia = verificarHabilidade(funcionarios[i])
 
@@ -35,3 +33,4 @@ for (let i = 0; i < funcionarios.length; i++) {
     console.log(`\nFuncionário(a) ${funcionarios[i].nome}\nHabilidade: ${funcionarios[i].habilidades[1]}`)
   }
 }
+
