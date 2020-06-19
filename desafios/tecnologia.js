@@ -1,36 +1,29 @@
-// Crie um programa que armazena um array de funcionários (objetos), cada funcionário tem um nome e suas habilidades em tecnologia
+// Crie um programa que armazena um array de colaboradores (objetos), cada colaborador tem um nome e suas habilidades em tecnologia
 
-const funcionarios = [{
-  nome: 'Carlos',
-  habilidades: ['HTML', 'CSS', 'JavaScript']
-},
-{
-  nome: 'Maxwel',
-  habilidades: ['Java', 'C++']
-},
-{
-  nome: 'Marcos',
-  habilidades: ['Node.js', 'React Native', 'React']
-}]
+const colaboradores = [
+  { nome: 'Carlos', habilidades: ['HTML', 'CSS', 'JavaScript'] },
+  { nome: 'Maxwel', habilidades: ['Java', 'C++'] },
+  { nome: 'Marcos', habilidades: ['Node.js', 'React Native', 'React'] }
+]
 
-function listarFuncionarios() {
-  for (let funcionario of funcionarios) {
-    console.log(`Nome: ${funcionario.nome}\nHabilidades: ${funcionario.habilidades.join(', ')}\n`)
+function listarColaboradores() {
+  for (let colaborador of colaboradores) {
+    console.log(`Nome: ${colaborador.nome}\nHabilidades: ${colaborador.habilidades.join(', ')}\n`)
   }
 }
 
-function verificarHabilidade(funcionarios) {
-  if (funcionarios.habilidades.includes('CSS')) {
+function verificarHabilidades(colaboradores) {
+  if (colaboradores.habilidades.includes('CSS')) {
     return true;
   }
   return false;
 }
 
-for (let i = 0; i < funcionarios.length; i++) {
-  const tecnologia = verificarHabilidade(funcionarios[i])
+for (let i = 0; i < colaboradores.length; i++) {
+  const tecnologia = verificarHabilidades(colaboradores[i])
 
   if (tecnologia) {
-    console.log(`\nFuncionário(a) ${funcionarios[i].nome}\nHabilidade: ${funcionarios[i].habilidades[1]}`)
+    console.log(`\nFuncionário(a) ${colaboradores[i].nome}\nHabilidade: CSS`)
   }
 }
 
