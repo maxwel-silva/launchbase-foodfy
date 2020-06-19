@@ -2,7 +2,7 @@
 
 // Um programador pode trabalhar com várias tecnologias, por isso armazene essas tecnologias em um array
 
-const funcionario = {
+const colaborador = {
   nome: 'Ohana Ravena',
   idade: 36,
   sexo: 'F',
@@ -21,4 +21,4 @@ const funcionario = {
   }]
 }
 
-console.log(`Funcionário(a) ${funcionario.nome} tem ${funcionario.idade} anos e usa a tecnologia ${funcionario.tecnologias[1].nome} com especialidade em ${funcionario.tecnologias[1].especialidade}`)
+console.log(`Colaborador(a) ${colaborador.nome} tem ${colaborador.idade} anos e usa a tecnologia ${colaborador.tecnologias[1].nome} com especialidade em ${colaborador.tecnologias[1].especialidade}`)
