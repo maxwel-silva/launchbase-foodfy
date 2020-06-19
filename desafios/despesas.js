@@ -1,6 +1,6 @@
 // Crie um programa que calcula a soma de receitas e despesas de usuários e no fim retorna o saldo
 
-const clientes = [{
+const usuarios = [{
   nome: 'Maxwel Silva',
   receitas: [100, 20, 80],
   despesas: [50, 15]
@@ -21,21 +21,29 @@ const clientes = [{
   despesas: [1000, 2300]
 }]
 
-for (let i = 0; i < clientes.length; i++) {
-  const receitas = clientes[i].receitas.reduce((A, B) => {
-    return A + B
-  })
+function calculaSaldo(receitas, despesas) {
+  const somaReceitas = somaNumeros(receitas)
+  const somaDespesas = somaNumeros(despesas)
 
-  const despesas = clientes[i].despesas.reduce((A, B) => {
-    return A + B
-  })
+  return somaReceitas - somaDespesas
+}
 
-  const saldo = receitas - despesas
+function somaNumeros(numeros) {
+  let soma = 0
+
+  for (let numero of numeros) {
+    soma = soma + numero
+  }
+  return soma
+}
+
+for (let usuario of usuarios) {
+  const saldo = calculaSaldo(usuario.receitas, usuario.despesas)
 
   if (saldo > 0) {
-    console.log(`Cliente: ${clientes[i].nome}\nSaldo: ${saldo.toFixed(2)}\n`)
+    console.log(`Cliente: ${usuario.nome}\nSaldo: ${saldo.toFixed(2)}\n`)
 
   } else {
-    console.log(`Cliente: ${clientes[i].nome}\nSaldo: ${saldo.toFixed(2)}\n`)
+    console.log(`Cliente: ${usuario.nome}\nSaldo: ${saldo.toFixed(2)}\n`)
   }
 }
