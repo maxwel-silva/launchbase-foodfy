@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Montserrat&display=swap";
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 * {
    margin: 0;
@@ -8,13 +8,13 @@
 
 body {
   background: #282a36;
-  font-family: 'Montserrat'; 
+  font: 400 14px Montserrat, sans-serif;
   color: whitesmoke;
 }
 
 header {
   padding: 32px;
-  /*border-bottom: 1px solid #333;*/
+  border-bottom: 1px solid #FFB268;
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -43,26 +43,22 @@ header div a:hover{
 
 #wrapper img {
  max-width: 20% ;
+ margin-bottom: 32px;
  /* border-radius: 50%; */
  /* border: 2px solid #FF7B00; */
- margin-bottom: 32px;
 }
 
 #wrapper h1 {
   font-size: 42px;
   line-height: 52px;
   font-weight: bold;
+  color: #FF7B00;
 }
 
 #wrapper h2 {
   font-size: 24px;
-  line-height: 34;
-  font-weight: normal;
+  line-height: 52px;
+  font-weight: bold;
   margin-top: 8px;
   opacity: 0.8;
 }
-
-#wrapper p {
-  
-}
-
