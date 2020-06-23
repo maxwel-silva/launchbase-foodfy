@@ -131,6 +131,8 @@ border-bottom: 1px solid var(--color-orange-dark);
   height: 100%;
   position: fixed;
   top: 0;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .modal {
@@ -147,4 +149,11 @@ border-bottom: 1px solid var(--color-orange-dark);
   right: 8px;
   top: 8px;
   cursor: pointer;
+}
+
+/*================= MODAL ACTIVE ================= */
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
