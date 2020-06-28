@@ -91,7 +91,7 @@ header {
   width: 320px;
 }
 
-/*=================== INFORMAÇÕES DE PRODUTOS ====================*/
+/*=================== INFORMAÇÕES DE PRODUTOS DA PÁGINA ====================*/
 
 section {
   display: grid;
@@ -134,7 +134,7 @@ section {
   margin-bottom: 30px;
 }
 
-/*=================== RODAPÉ ====================*/
+/*=================== RODAPÉ DA PÁGINA ====================*/
 
 footer {
   background-color: rgba(5, 4, 2, 0.145);
