@@ -24,6 +24,8 @@ header {
   background: rgba(0, 0, 0, 0.1);
 }
 
+
+
 .links {
   text-align: center;
 }
@@ -31,9 +33,7 @@ header {
 .links a {
   color: white;
   font-size: 25px;
-  line-height: 28px;
-  margin: 0 16px;
-  text-decoration: none;
+  
 }
 .links a:hover{
   color: var(--color-orange);
