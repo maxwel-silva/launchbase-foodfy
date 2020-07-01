@@ -47,7 +47,36 @@ header {
   transition: color 200ms;
 }
 
-/*=================== RODAPÉ DA PÁGINA ====================*/
+/* =================== HISTÓRIA DA EMPRESA ==================== */
+
+.page-about{
+  font-family: 'Raleway', sans-serif;
+  margin-top: 50px;
+}
+
+.about-1 h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-black);
+  margin-bottom: 20px;
+}
+
+.about-2 h2,.about-3 h2 {
+  font-size: 20px;
+  color: var(--color-black);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.about-1 p, .about-2 p, .about-3 p {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+/* =================== RODAPÉ DA PÁGINA ==================== */
 
 footer {
   background-color: rgba(5, 4, 2, 0.145);
