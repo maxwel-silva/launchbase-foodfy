@@ -9,7 +9,7 @@
   margin: 0;
 }
 
-/*=================== CABEÇALHO DA PÁGINA ====================*/
+/*----------------- Cabeçalho Home -----------------*/
 
 body {
   background-color: rgb(255, 255, 255);
@@ -47,7 +47,7 @@ header {
   transition: color 200ms;
 }
 
-/*=================== INFORMAÇÕES DA PÁGINA ====================*/
+/*----------------- Informações da Página -----------------*/
 
 .information-page {
   background-color: rgba(5, 4, 2, 0.145);
@@ -91,7 +91,7 @@ header {
   width: 320px;
 }
 
-/*=================== INFORMAÇÕES DE PRODUTOS DA PÁGINA ====================*/
+/*----------------- Informações de Produtos da Página -----------------*/
 
 section {
   display: grid;

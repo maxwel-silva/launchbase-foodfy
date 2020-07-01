@@ -9,7 +9,7 @@
   margin: 0;
 }
 
-/*=================== CABEÇALHO DA PÁGINA ====================*/
+/*----------------- Cabeçalho Sobre -----------------*/
 
 body {
   background-color: rgb(255, 255, 255);
@@ -47,7 +47,7 @@ header {
   transition: color 200ms;
 }
 
-/* =================== HISTÓRIA DA EMPRESA ==================== */
+/*----------------- História da Empresa -----------------*/
 
 .page-about {
   font-family: 'Raleway', sans-serif;
@@ -77,7 +77,7 @@ header {
   margin-bottom: 30px;
 }
 
-/* =================== RODAPÉ DA PÁGINA ==================== */
+/*----------------- Rodapé da Página -----------------*/
 
 footer {
   background-color: rgba(5, 4, 2, 0.145);
