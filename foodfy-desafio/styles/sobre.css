@@ -61,7 +61,7 @@ header {
   margin-bottom: 20px;
 }
 
-.about-2 h2,.about-3 h2 {
+.about-2 h2, .about-3 h2 {
   font-size: 20px;
   color: var(--color-black);
   margin-top: 30px;
