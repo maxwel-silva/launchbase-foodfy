@@ -31,12 +31,13 @@ header {
 .links a {
   color: white;
   font-size: 25px;
-  
+  text-decoration: none;
+  margin: 0px 15px;
 }
+
 .links a:hover{
   color: var(--color-orange);
-  transition: color 200ms;
-  
+  transition: color 200ms; 
 }
 
 #wrapper {
