@@ -122,6 +122,11 @@ border-bottom: 1px solid var(--color-orange-dark);
   text-align: center;
 }
 
+#links-footer a {
+  padding: 30px 2px;
+  text-align: center;
+}
+
 /*================= MODAL ================= */
 
 .modal-overlay {
