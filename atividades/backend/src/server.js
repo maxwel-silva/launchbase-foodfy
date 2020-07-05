@@ -1,15 +1,22 @@
 'use strict'
 
 const express = require('express')
+const nunjucks = require('nunjucks')
+
 const server = express()
 
+server.use(express.static('public'))
 
+server.set('view engine', 'html')
 
-server.get('/', function(request, response){
-  return response.send('Hi')
+nunjucks.configure('views', {
+  express: server
 })
 
 
-server.listen(5000, function(){
-  console.log('Server Run')
+
+server.get('/', function (request, response) {
+  return response.render('index.html')
 })
+
+server.listen(5000)
