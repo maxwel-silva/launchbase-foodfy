@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  
+  {% block head %}
+
+  <title>Launch Base Rocketseat</title>
+  
+  {% endblock %}
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="links">
+      <a href="/">Sobre</a>
+      <a href="/cursos">Cursos</a>
+    </div>
+  </header>
+
+  {% block content %}
+  {% endblock %}
+
+</body>
+
+</html>
