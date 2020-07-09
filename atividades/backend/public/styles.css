@@ -168,3 +168,29 @@ iframe {
   position: absolute;
   top:5%;
 }
+
+/*================= ERROR NOT FOUND PAGE ================= */
+
+.error {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20vh 30vw;
+  padding: 70px;
+  border-radius: 16px;
+}
+
+.error img {
+  width: 30%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.error h1 {
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: white
+}
