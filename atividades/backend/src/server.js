@@ -4,6 +4,7 @@ const express = require('express')
 const nunjucks = require('nunjucks')
 
 const server = express()
+const videos = require('../data.js')
 
 server.use(express.static('public'))
 
@@ -18,7 +19,7 @@ server.get('/', function (request, response) {
 })
 
 server.get('/cursos', function (request, response) {
-  return response.render('cursos')
+  return response.render('cursos', {items: videos})
 })
 
 server.use(function (request, response) {
