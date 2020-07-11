@@ -17,7 +17,12 @@
       <div class="card" id="{{item.id}}">
 
         <div class="card__image-container">
-          <img src="https://img.youtube.com/vi/{item.id}/maxresdefault.jpg" alt="Image of {{item.title}}">
+          <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="Image of {{item.title}}">
+
+          {% if item.featured %}}
+            <div class="featured">Featured</div>
+          {% endif %}}
+          
         </div>
 
         <div class="card__content">
@@ -29,22 +34,22 @@
           <p class="card__price">{{item.price}}</p>
         </div>
       </div>
-      {% endfor %}}
+    {% endfor %}
 
-    </section>
+  </section>
 
-    <div class="modal-overlay">
-      <div class="modal">
-        <a class="close-modal">
-          <i class="material-icons">close</i>
-        </a>
+  <div class="modal-overlay">
+    <div class="modal">
+      <a class="close-modal">
+        <i class="material-icons">close</i>
+      </a>
 
-        <div class="modal-content">
-          <iframe src="" frameborder="0"></iframe>
-        </div>
+      <div class="modal-content">
+        <iframe src="" frameborder="0"></iframe>
       </div>
     </div>
+  </div>
 
-    <script src="scripts.js"></script>
+  <script src="scripts.js"></script>
 
-  {% endblock %}
+{% endblock %}

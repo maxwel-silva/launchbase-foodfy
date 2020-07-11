@@ -3,14 +3,16 @@ module.exports = [
     id: 'ipHuSfOYhwA',
     title: 'Formulário JS Puro | José Raimundo',
     duration: '57 Minutos',
-    price: 'Free'
+    price: 'Free',
+    featured: true
   },
 
   {
-    id: 'pQN - pnXPaVg',
+    id: 'pQN-pnXPaVg',
     title: 'HTML In 2 Hours | Paulo Pimenta',
     duration: '2 Horas',
-    price: 'Free'
+    price: 'Free',
+    featured: true
   },
   {
     id: 'c7P03kkrEG8',
