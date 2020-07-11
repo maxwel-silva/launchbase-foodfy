@@ -3,7 +3,7 @@
 :root {
   --color-orange: #FFB268;
   --color-orange-dark: #FF7B00;
-  --color-orange-light:  rgba(0, 0, 0, 0.2);
+  --color-black-light:  rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -95,8 +95,9 @@ border-bottom: 1px solid var(--color-orange-dark);
 }
 
 .card {
-  background-color: var(--color-orange-light);
+  background-color: var(--color-black-light);
   display: grid;
+  cursor: pointer;
 }
 
 .card__image-container img {
@@ -118,7 +119,7 @@ border-bottom: 1px solid var(--color-orange-dark);
 }
 
 .card__price {
-  background-color: var(--color-orange-light);
+  background-color: var(--color-black-light);
   filter: brightness(90%);
   padding: 5px 20px;
   border-radius: 20px;
@@ -171,6 +172,23 @@ iframe {
   position: absolute;
   top:5%;
 }
+
+/*================= FEATURED ================= */
+
+.featured-wrapper.card__image-container{
+  position: relative;
+}
+
+.featured {
+  position: absolute;
+  background-color: var(--color-orange);
+  color: black;
+  font-weight: bold;
+  padding: 2px 8px;
+  position: absolute;
+  top: -8px;
+}
+
 
 /*================= ERROR NOT FOUND PAGE ================= */
 

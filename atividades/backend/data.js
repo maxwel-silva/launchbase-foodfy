@@ -12,13 +12,14 @@ module.exports = [
     title: 'HTML In 2 Hours | Paulo Pimenta',
     duration: '2 Horas',
     price: 'Free',
-    featured: true
+    
   },
   {
     id: 'c7P03kkrEG8',
     title: 'Configurando VSCode | Mariana Carla',
     duration: '15 Minutos',
-    price: 'Free'
+    price: 'Free',
+  
   },
   {
     id: '_l4pJ7HCrl4',
@@ -30,7 +31,8 @@ module.exports = [
     id: 'iZ1ucWosOww',
     title: 'Curso Web Completo | Mariano Lago',
     duration: '6 Horas',
-    price: 'Free'
+    price: 'Free',
+  
   },
   {
     id: 'HXV3zeQKqGY',
