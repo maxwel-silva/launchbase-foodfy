@@ -49,10 +49,10 @@ server.get('/video', function (request, response) {
   })
 
   if (!video) {
-    return response.send('Vídeo not found')
+    return response.status(404).render('not-found')
   }
 
-  return response.render('video', { video })
+  return response.render('video', { item: video })
 
 })
 
